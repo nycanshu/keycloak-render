@@ -3,7 +3,6 @@ services:
     name: keycloak-dev
     env: docker
     plan: starter
-    region: oregon 
     dockerfilePath: Dockerfile
     autoDeploy: true
     envVars:
@@ -11,3 +10,5 @@ services:
         value: admin
       - key: KEYCLOAK_ADMIN_PASSWORD
         value: admin
+    ports:
+      - 8080
